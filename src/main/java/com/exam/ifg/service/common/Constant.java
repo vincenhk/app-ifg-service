@@ -22,6 +22,10 @@ public class Constant {
     public static final int BAD_GATEWAY = Response.Status.BAD_GATEWAY.getStatusCode(); // 502
     public static final int SERVICE_UNAVAILABLE = Response.Status.SERVICE_UNAVAILABLE.getStatusCode(); // 503
 
+    //Message Transaction
+    public static final String SUCCESS_TRANSACTION = "Transaction successful";
+    public static final String FAILED_TRANSACTION = "Transaction failed";
+
     // Format used
     public static final String MONTH_YEAR = "MM_yyyy";
     public static final String DAY_TIME = "dd-HH:mm";

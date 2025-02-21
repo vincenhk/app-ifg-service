@@ -25,6 +25,7 @@ public class GlobalSuccessResponseDto<T>{
 
     public GlobalSuccessResponseDto(String status, T data) {
         this.status = status;
+        this.message = Constant.SUCCESS_TRANSACTION;
         this.code = Constant.OK;
         this.data = data;
     }

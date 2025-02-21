@@ -5,18 +5,24 @@ import com.exam.ifg.service.common.Constant;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Positive;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class TransactionRequestDto {
+
     @NotBlank(message = "Transaction Id can't empty!")
     private String transactionId;
-    @NotBlank(message = "User Id can't empty!")
+    @NotNull(message = "User Id can't empty!")
     private Long userId;
     @Positive(message = "Amount must more than 0")
     private BigDecimal amount;

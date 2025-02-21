@@ -26,7 +26,7 @@ public class Transactions {
     @JoinColumn(name = "user_id", nullable = false)
     private Users user;
 
-    @Column(name = "code", nullable = false)
+    @Column(name = "code", nullable = false, unique = true)
     private String trxCode;
 
     @Column(name = "amount", nullable = false)

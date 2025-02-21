@@ -7,7 +7,7 @@ import jakarta.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped
 public class BalanceRepository implements PanacheRepository<Balance> {
-    public Balance findByUserId(Long userId) {
-        return find("userId", userId).firstResult();
+    public Balance findByUser(Users user) {
+        return find("user", user).firstResult();
     }
 }

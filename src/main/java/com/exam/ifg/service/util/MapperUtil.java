@@ -9,7 +9,7 @@ public class MapperUtil {
 
     private static ObjectMapper objectMapper = new ObjectMapper();
 
-    public static <T> T   jsonToObject(String json, Class<T> objectClass) throws JsonProcessingException {
+    public static <T> T jsonToObject(String json, Class<T> objectClass) throws JsonProcessingException {
         return objectMapper.readValue(json, objectClass);
     }
 

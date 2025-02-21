@@ -1,8 +1,8 @@
 package com.exam.ifg.service.enums;
 
 public enum TransactionDirection {
-    CREDIT("+"),
-    DEBIT("-");
+    CREDIT("-"),
+    DEBIT("+");
 
     private final String value;
 

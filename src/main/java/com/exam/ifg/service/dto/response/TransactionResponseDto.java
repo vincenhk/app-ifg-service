@@ -6,7 +6,6 @@ import java.math.BigDecimal;
 
 @Setter
 @Getter
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class TransactionResponseDto {
