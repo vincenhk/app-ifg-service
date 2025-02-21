@@ -33,8 +33,28 @@ postgreSql
    jika sudah berjalan bisa di rubah ke generation=update/none
    ```
 3. Jalankan script DML yang terdapat pada additional SQL manual by db
-4. Create pada kafka dua topic berikut : topic test (Consumer) & ifg-topic (Produser) //Setting simple tanpa partition 
-   
+4. Create pada kafka dua topic berikut : topic test (Consumer) & ifg-topic (Produser) //Setting simple tanpa partition
+
+## Json Request API
+
+```
+{
+  "transactionId": "TX789012",
+  "userId": 1,
+  "amount": 250000.00,
+  "currency": "IDR",
+  "timeTransaction": "2025-02-21 15:30:00",
+  "transactionType": "DEPOSIT",
+  "transactionDirection": "DEBIT",
+  "status": "PENDING",
+  "description": "Payment for invoice INV-20250221"
+}
+```
+
+## Json Kafka
+```
+{"transactionId": "TX789014", "userId": 1, "amount": 250000.00, "currency": "IDR", "timeTransaction": "2025-02-21 15:30:00", "transactionType": "DEPOSIT", "transactionDirection": "DEBIT", "status": "PENDING", "description": "Payment for invoice INV-20250224"}
+```
 ## Success Response
 ```
 {
