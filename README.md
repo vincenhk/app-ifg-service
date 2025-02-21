@@ -8,6 +8,8 @@ Framework: Quarkus;
 
 Dikirim ke email ruchi@ifg-life.id , rana.dewadatta@ifg-life.id, via gitlab dibuat public jangan di private dan ditunggu 1x24 jam
 
+Saya memutuskan untuk membuat Transaction Withdrawl dan deposit yang nantinya akan mempengaruhi Balance Account (Tapi Cuman simple ya. jangan berharap banyak bang! Ahaha)
+
 ## Tools
 
 ```
